@@ -1,0 +1,230 @@
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bree Serif';
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 6em;
+}
+
+nav :nth-child(2) img {
+    width: 80%;
+    height: 100%;
+}
+
+section img {
+    width: 12em;
+    height: 15em;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section p {
+    margin-top: 0.3em;
+    margin-left: 2em;
+    text-align: center;
+}
+
+section :nth-last-child {
+    margin-bottom: 0.5em;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10em;
+    font-size: 1em;
+}
+
+p {
+    text-align: center;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.element {
+    display: inline-block;
+    background-color: hotpink;
+    width: 9em;
+    height: 6em;
+    font-family: 'Bree Serif';
+    font-size: 1em;
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+    margin-left: 7em;
+    margin-top: 1em;
+    animation: roll 2s infinite;
+    transform: rotate(30deg);
+    opacity: .7;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media only screen and (min-width: 40em) {
+
+
+ h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+section img {
+    width: 18em;
+    height: 19em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+    padding: 2px 5px 5px 0px;
+}
+
+section p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    padding: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 4em;
+    font-size: 3em;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    font-family: 'Bree Serif';
+    width: 11em;
+    height: 3em;
+    font-size: 0.8em;
+    background-color: hotpink;
+    padding: 0.4em;
+    margin-left: 55em;
+    margin-top: 1em;
+    margin-right: auto;
+    border-radius: 5%;
+    border: none;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Gekeken naar mogelijkheden met animaties https://css-tricks.com/almanac/properties/t/transform/*/
+.element {
+    display: inline-block;
+    background-color: hotpink;
+    width: 10em;
+    height: 10em;
+    font-size: 1em;
+    padding: 0.5em;
+    color: white;
+    margin-right: 5px;
+    margin-left: 43em;
+    animation: roll 2s infinite;
+    transform: rotate(30deg);
+    opacity: .7;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+body,
+html {
+    height: 100%;
+}
+
+/* Gekeken naar verschillende mogelijkheden blendmodes met css : https://getflywheel.com/layout/css-blend-modes/ 
+ en https://codepen.io/abbeyjfitzgerald/pen/MJWWRy */
+.blend {
+    background: pink;
+}
+
+.blend img {
+    mix-blend-mode: hard-light;
+}
+
+.luminosity {
+    background:linear-gradient(green 0%, red 80%),
+    linear-gradient(to right, purple 0%, yellow 100%),
+    url("https://i.postimg.cc/5tPJT19V/beauty1.jpg");
+    background-blend-mode: screen, difference, lighten;
+    background-size: 2em;
+    min-height: 10em;
+}
+
+.overlay {
+    background: purple;
+}
+
+.overlay img {
+    mix-blend-mode: overlay;
+}
+
+.saturation {
+    background: orange;
+}
+
+.saturation {
+    mix-blend-mode: saturation
+}
+
+/* Overige bronnen: 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+www.stackoverflow.com */
